@@ -3,7 +3,8 @@
 * Студент: [Савелий Шмаков](https://up.htmlacademy.ru/htmlcss/39/user/2486001).
 * Наставник: [Карина Королева](https://htmlacademy.ru/profile/id1526731).
 * Сайт: [Мой проект Седона](https://l1ghtmanch4k.github.io/2486001-sedona-39/).
----с
+
+---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
