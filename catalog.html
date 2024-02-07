@@ -40,25 +40,25 @@
         </header>
         <main>
             <section>
-                <h1>Гостиницы Седоны</h1>
+                <h1 class="main-title1">Гостиницы Седоны</h1>
                 <img src="#" alt="Домик">
-                <a>Гостиницы</a>
-                <fieldset>
+                <p class="main-list">Гостиницы</p>
+                <fieldset class="main-fieldset">
                     <legend>Инфраструктура:</legend>
-                    <ul>
-                        <li>
+                    <ul class="main-link">
+                        <li class="main-item">
                             <label>
                                 <input type="checkbox" name="pool" checked>
                                 Бассейн
                             </label>
                         </li>
-                        <li>
+                        <li class="main-item">
                             <label>
                                 <input type="checkbox" name="parking" checked>
                                 Парковка
                             </label>
                         </li>
-                        <li>
+                        <li class="main-item">
                             <label>
                                 <input type="checkbox" name="wi-fi">
                                 WI-FI
@@ -66,22 +66,22 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="main-fieldset">
                     <legend>Тип жилья:</legend>
-                    <ul>
-                        <li>
+                    <ul class="main-link">
+                        <li class="main-link">
                             <label>
                                 <input type="radio" name="hotels" checked>
                                 Гостиницы
                             </label>
                         </li>
-                        <li>
+                        <li class="main-link">
                             <label>
                                 <input type="radio" name="motels">
                                 Мотель
                             </label>
                         </li>
-                        <li>
+                        <li class="main-link">
                             <label>
                                 <input type="radio" name="apartments">
                                 Апартаменты
@@ -89,28 +89,69 @@
                         </li>
                     </ul>
                 </fieldset>
-                <h2>Стоимость, ₽:</h2>
-                <span>0 от</span>
-                <span>9000 до</span>
+                <fieldset>
+                    <legend>
+                        Стоимость, ₽:
+                    </legend>
+                    <ul>
+                        <li>
+                            <input type="number" name="number-min" placeholder="0">
+                        </li>
+                        <li>
+                            <label>От</label>
+                        </li>
+                        <li>
+                            <input type="number" name="number-max" placeholder="9000">
+                        </li>
+                        <li>
+                            <label>До</label>
+                        </li>
+                    </ul>
+                </fieldset>
                 <label>
                     <input type="submit" name="ПРИМЕНИТЬ" value="ПРИМЕНИТЬ">
                 </label>
+                <br>
                 <lable>
                     <input type="submit" name="СБРОСИТЬ" value="СБРОСИТЬ">
                 </lable>
                 <section>
+                    <p>Найдено гостиниц:<span>38</span></p>
                     <select class="select-control" aria-label="Сортировка">
                         <option value="popular">Сначала популярное</option>
                         <option value="cheap">Сначала дешёвое</option>
                         <option value="expensive">Сначала дорогое</option>
-                      </select>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="submit" name="choice">
+                                    <img src="#" alt="Показывает варианты">
+                                    <span class="visually-hidden">Выбор</span>
+                                </label>
+                                <label>
+                                    <input type="submit" name="basket">
+                                    <img src="#" alt="Корзина">
+                                    <span class="visually-hidden">Корзина</span>
+                                </label>
+                                <label>
+                                    <input type="submit" name="menu">
+                                    <img src="#" alt="Показывает меню действий">
+                                    <span class="visually-hidden">Меню</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </select>
                 </section>
                 <section>
-                    <h5>Подпишитесь на рассылку</h5>
+
+                </section>
+                <section></section>
+                <section>
+                    <h4>Подпишитесь на рассылку</h4>
                     <p>Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
                     <form method="post" action="#">
                         <input type="email" name="email" id="email">
-                        <input type="submit" value="ПОДПИСАТЬСЯ" placeholder="Ваш e-mail">
+                        <input type="submit" value="ПОДПИСАТЬСЯ" placeholder="e-mail">
                     </form>
                 </section>
         </main>
