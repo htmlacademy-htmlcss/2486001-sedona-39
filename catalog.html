@@ -12,53 +12,65 @@
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a href="index.html" class="navigation-link">Главная</a>
+                        <a href="#" class="navigation-link">Главная</a>
                     </li>
                     <li class="navigation-item">
                         <a href="#" class="navigation-link">О Седоне</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-link">Гостиницы</a>
+                        <a href="catalog.html" class="navigation-link">Гостиницы</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="navigation-list" class="navigation-user">
+            <ul class="user-list">
                 <li>
-                    <a href="#" class="navigation-link">
+                    <a href="#" class="user-link">
                         <span span="visually-hidden">Поиск</span>
                     </a>
                 </li>
-                <li class="navigation-item">
-                    <a href="#" class="navigation-link">
+                <li class="user-item">
+                    <a href="#" class="user-link">
                         <span class="visually-hidden">Избранное</span>
                     </a>
                 </li>
-                <li class="navigation-item">
-                    <a href="#" class="navigation-link">ХОЧУ СЮДА!</a>
+                <li class="user-item">
+                    <a href="#" class="user-link">Хочу сюда!</a>
                 </li>
             </ul>
         </header>
         <main>
-            <section>
-                <h1 class="main-title1">Гостиницы Седоны</h1>
-                <img src="#" alt="Домик">
-                <p class="main-list">Гостиницы</p>
-                <fieldset class="main-fieldset">
+            <section class="findHotelForm">
+                <h1 class="findHotelForm-title">Гостиницы Седоны</h1>
+                <img class="findHotelForm-img" src="#" alt="Домик">
+                <ul class="findHotelForm-list">
+                    <li class="findHotelForm-item">
+                        <a class="findHotelForm-item-button findHotelForm-link" href="index.html">
+                            <span class="visually-hidden">Домой</span>
+                        </a>
+                    </li>
+                    <li class="findHotelForm-item">
+                        <a class="findHotelForm-item-button findHotelForm-link" href="catalog.html">
+                            <span>Гостиницы</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <fieldset class="findHotelForm-fieldset">
                     <legend>Инфраструктура:</legend>
-                    <ul class="main-link">
-                        <li class="main-item">
+                    <ul class="findHotelForm-list">
+                        <li class="findHotelForm-item">
                             <label>
                                 <input type="checkbox" name="pool" checked>
                                 Бассейн
                             </label>
                         </li>
-                        <li class="main-item">
+                        <li class="findHotelForm-item">
                             <label>
                                 <input type="checkbox" name="parking" checked>
                                 Парковка
                             </label>
                         </li>
-                        <li class="main-item">
+                        <li class="findHotelForm-item">
                             <label>
                                 <input type="checkbox" name="wi-fi">
                                 WI-FI
@@ -66,22 +78,22 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="main-fieldset">
+                <fieldset class="findHotelForm-fieldset">
                     <legend>Тип жилья:</legend>
-                    <ul class="main-link">
-                        <li class="main-link">
+                    <ul >
+                        <li class="findHotelForm-item">
                             <label>
                                 <input type="radio" name="hotels" checked>
                                 Гостиницы
                             </label>
                         </li>
-                        <li class="main-link">
+                        <li class="findHotelForm-item">
                             <label>
                                 <input type="radio" name="motels">
                                 Мотель
                             </label>
                         </li>
-                        <li class="main-link">
+                        <li class="findHotelForm-item">
                             <label>
                                 <input type="radio" name="apartments">
                                 Апартаменты
@@ -90,17 +102,15 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>
-                        Стоимость, ₽:
-                    </legend>
-                    <ul>
-                        <li>
+                    <legend>Стоимость, ₽:</legend>
+                    <ul class="findHotelForm-list">
+                        <li class="findHotelForm-item">
                             <input type="number" name="number-min" placeholder="0">
                         </li>
-                        <li>
+                        <li class="findHotelForm-item">
                             <label>От</label>
                         </li>
-                        <li>
+                        <li class="findHotelForm-item">
                             <input type="number" name="number-max" placeholder="9000">
                         </li>
                         <li>
@@ -115,60 +125,60 @@
                 <lable>
                     <input type="submit" name="СБРОСИТЬ" value="СБРОСИТЬ">
                 </lable>
-                <section>
+                <section class="result">
                     <p>Найдено гостиниц:<span>38</span></p>
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="popular">Сначала популярное</option>
-                        <option value="cheap">Сначала дешёвое</option>
-                        <option value="expensive">Сначала дорогое</option>
-                        <ul>
-                            <li>
+                    <select class="result-select-control" aria-label="Сортировка">
+                        <option value="result-popular">Сначала популярное</option>
+                        <option value="result-cheap">Сначала дешёвое</option>
+                        <option value="result-expensive">Сначала дорогое</option>
+                        <ul class="result-list">
+                            <li class="result-item">
                                 <label>
-                                    <input type="submit" name="choice">
+                                    <input type="submit" name="small">
                                     <img src="#" alt="Показывает варианты">
-                                    <span class="visually-hidden">Выбор</span>
+                                    <span class="visually-hidden">Мелкие значки</span>
                                 </label>
+                            </li>
+                            <li class="result-item">
                                 <label>
-                                    <input type="submit" name="basket">
+                                    <input type="submit" name="big">
                                     <img src="#" alt="Корзина">
-                                    <span class="visually-hidden">Корзина</span>
+                                    <span class="visually-hidden">Крупные значки</span>
                                 </label>
+                            </li>
+                            <li class="result-item">
                                 <label>
-                                    <input type="submit" name="menu">
+                                    <input type="submit" name="list">
                                     <img src="#" alt="Показывает меню действий">
-                                    <span class="visually-hidden">Меню</span>
+                                    <span class="visually-hidden">Список</span>
                                 </label>
                             </li>
                         </ul>
                     </select>
                 </section>
-                <section>
-
-                </section>
-                <section></section>
-                <section>
-                    <h4>Подпишитесь на рассылку</h4>
-                    <p>Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-                    <form method="post" action="#">
-                        <input type="email" name="email" id="email">
-                        <input type="submit" value="ПОДПИСАТЬСЯ" placeholder="e-mail">
-                    </form>
-                </section>
         </main>
         <footer>
+            <section class="subscribe catalog-subscribe">
+                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                <p class="subscribe-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+                <form method="post" action="#">
+                    <input type="email" name="email" id="email">
+                    <input type="submit" value="ПОДПИСАТЬСЯ" placeholder="Ваш e-mail">
+                </form>
+            </section>
             <ul class="social-list">
                 <li class="social-item">
-                    <a class="button" href="#" class="social-link">
+                    <a class="social-item-button social-link" href="#">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
                 </li>
                 <li class="social-item">
-                    <a class="button" href="#" class="social-link">
+                    <a class="social-item-button social-link" href="#">
                         <span class="visually-hidden">Телеграм</span>
                     </a>
                 </li>
                 <li class="social-item">
-                    <a class="button" href="#" class="social-link">
+                    <a class="social-item-button social-link" href="#">
                         <span class="visually-hidden">Ютуб</span>
                     </a>
                 </li>
