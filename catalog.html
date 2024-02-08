@@ -18,18 +18,18 @@
                         <a href="#" class="navigation-link">О Седоне</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="catalog.html" class="navigation-link">Гостиницы</a>
+                        <a class="navigation-link">Гостиницы</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="user-list">
-                <li>
-                    <a href="#" class="user-link">
+            <ul class="user-link">
+                <li class="user-item">
+                    <a href="#" class="user-link" class="user-list">
                         <span span="visually-hidden">Поиск</span>
                     </a>
                 </li>
                 <li class="user-item">
-                    <a href="#" class="user-link">
+                    <a href="#" class="user-list">
                         <span class="visually-hidden">Избранное</span>
                     </a>
                 </li>
@@ -38,134 +38,234 @@
                 </li>
             </ul>
         </header>
-        <main>
-            <section class="findHotelForm">
-                <h1 class="findHotelForm-title">Гостиницы Седоны</h1>
-                <img class="findHotelForm-img" src="#" alt="Домик">
-                <ul class="findHotelForm-list">
-                    <li class="findHotelForm-item">
-                        <a class="findHotelForm-item-button findHotelForm-link" href="index.html">
+        <main class="main-catalog">
+            <section class="find_Hotel_Form">
+                <h1 class="find_Hotel_Form-title">Гостиницы Седоны</h1>
+                <img class="find_Hotel_Form-img" src="#" alt="Домик">
+                <ul class="find_Hotel_Form-list">
+                    <li class="find_Hotel_Form-item">
+                        <a class="find_Hotel_Form-item-button findHotelForm-link" href="index.html">
                             <span class="visually-hidden">Домой</span>
                         </a>
                     </li>
                     <li class="findHotelForm-item">
-                        <a class="findHotelForm-item-button findHotelForm-link" href="catalog.html">
+                        <a class="findHotelForm-item-button findHotelForm-link">
                             <span>Гостиницы</span>
                         </a>
                     </li>
                 </ul>
-
-                <fieldset class="findHotelForm-fieldset">
+                <fieldset class="find_Hotel_Form-fieldset">
                     <legend>Инфраструктура:</legend>
-                    <ul class="findHotelForm-list">
-                        <li class="findHotelForm-item">
-                            <label>
-                                <input type="checkbox" name="pool" checked>
+                    <ul class="find_Hotel_Form-list">
+                        <li class="find_Hotel_Form-item">
+                            <label class="find_Hotel_Form-checkbox">
+                                <input type="checkbox" name="pool" checked class="find_Hotel_Form-input-checkbox">
                                 Бассейн
                             </label>
                         </li>
-                        <li class="findHotelForm-item">
-                            <label>
-                                <input type="checkbox" name="parking" checked>
+                        <li class="find_Hotel_Form-item">
+                            <label class="find_Hotel_Form-checkbox">
+                                <input type="checkbox" name="parking" checked class="find_Hotel_Form-input-checkbox">
                                 Парковка
                             </label>
                         </li>
-                        <li class="findHotelForm-item">
-                            <label>
-                                <input type="checkbox" name="wi-fi">
+                        <li class="find_Hotel_Form-item">
+                            <label class="find_Hotel_Form-checkbox">
+                                <input type="checkbox" name="wi-fi" class="find_Hotel_Form-input-checkbox">
                                 WI-FI
                             </label>
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="findHotelForm-fieldset">
+                <fieldset class="find_Hotel_Form-fieldset">
                     <legend>Тип жилья:</legend>
-                    <ul >
-                        <li class="findHotelForm-item">
-                            <label>
-                                <input type="radio" name="hotels" checked>
+                    <ul>
+                        <li class="find_Hotel_Form-item">
+                            <label class="find_Hotel_Form-radio">
+                                <input type="radio" name="hotels" checked class="find_Hotel_Form-input-radio">
                                 Гостиницы
                             </label>
                         </li>
-                        <li class="findHotelForm-item">
-                            <label>
-                                <input type="radio" name="motels">
+                        <li class="find_Hotel_Form-item">
+                            <label class="find_Hotel_Form-radio">
+                                <input type="radio" name="motels" class="find_Hotel_Form-input-radio">
                                 Мотель
                             </label>
                         </li>
-                        <li class="findHotelForm-item">
-                            <label>
-                                <input type="radio" name="apartments">
+                        <li class="find_Hotel_Form-item">
+                            <label class="find_Hotel_Form-radio">
+                                <input type="radio" name="apartments" class="find_Hotel_Form-input-radio">
                                 Апартаменты
                             </label>
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="find_Hotel_Form-price">
                     <legend>Стоимость, ₽:</legend>
-                    <ul class="findHotelForm-list">
-                        <li class="findHotelForm-item">
-                            <input type="number" name="number-min" placeholder="0">
+                    <ul class="find_Hotel_Form-list">
+                        <li class="find_Hotel_Form-item">
+                            <label>
+                                <input type="number" name="number-min" placeholder="0" class="find_Hotel_Form-item-0">
+                                От
+                            </label>
                         </li>
-                        <li class="findHotelForm-item">
-                            <label>От</label>
                         </li>
-                        <li class="findHotelForm-item">
-                            <input type="number" name="number-max" placeholder="9000">
+                        <li class="find_Hotel_Form-item">
+                            <label>
+                                <input type="number" name="number-max" placeholder="9000"
+                                    class="find_Hotel_Form-item-9000">
+                                До</label>
                         </li>
-                        <li>
-                            <label>До</label>
                         </li>
                     </ul>
                 </fieldset>
-                <label>
-                    <input type="submit" name="ПРИМЕНИТЬ" value="ПРИМЕНИТЬ">
+                <label class="header-button">
+                    <input type="submit" name="ПРИМЕНИТЬ" value="ПРИМЕНИТЬ" class="header-button-apply">
                 </label>
                 <br>
-                <lable>
-                    <input type="submit" name="СБРОСИТЬ" value="СБРОСИТЬ">
-                </lable>
-                <section class="result">
-                    <p>Найдено гостиниц:<span>38</span></p>
-                    <select class="result-select-control" aria-label="Сортировка">
-                        <option value="result-popular">Сначала популярное</option>
-                        <option value="result-cheap">Сначала дешёвое</option>
-                        <option value="result-expensive">Сначала дорогое</option>
-                        <ul class="result-list">
-                            <li class="result-item">
-                                <label>
-                                    <input type="submit" name="small">
-                                    <img src="#" alt="Показывает варианты">
-                                    <span class="visually-hidden">Мелкие значки</span>
+                <lable class="header-button">
+                    <input type="submit" name="СБРОСИТЬ" value="СБРОСИТЬ" class="header-button-reset">
+                    </label>
+                    <section class="result">
+                        <p>Найдено гостиниц:<span>38</span></p>
+                        <select class="result-select-control" aria-label="Сортировка">
+                            <option value="result-popular">Сначала популярное</option>
+                            <option value="result-cheap">Сначала дешёвое</option>
+                            <option value="result-expensive">Сначала дорогое</option>
+                            <ul class="result-list">
+                                <li class="result-item">
+                                    <label>
+                                        <input type="submit" name="small">
+                                        <img src="#" alt="Мелкие значки">
+                                        <span class="visually-hidden">Мелкие значки</span>
+                                    </label>
+                                </li>
+                                <li class="result-item">
+                                    <label>
+                                        <input type="submit" name="big">
+                                        <img src="#" alt="Крупные значки">
+                                        <span class="visually-hidden">Крупные значки</span>
+                                    </label>
+                                </li>
+                                <li class="result-item">
+                                    <label>
+                                        <input type="submit" name="list">
+                                        <img src="#" alt="Список">
+                                        <span class="visually-hidden">Список</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </select>
+                    </section>
+                    <section class="hotel_choice">
+                        <ul class="hotel_choice-link">
+                            <li class="hotel_choice-item">
+                                <img src="#" alt="Amara Resort & Spa" class="hotel_choice-img">
+                                <h3 class="hotel_choice-title">Amara Resort & Spa</h3>
+                                <span class="hotel_choice-span">Гостиница</span>
+                                <span class="hotel_choice-span">От 4000 ₽</span>
+                                <label class="hotel_choice-label">
+                                    <a href="#" class="hotel_choice-details">Подробнее</a>
                                 </label>
+                                <img src="#" alt="5 stars">
+                                <div class="rating" data-total-value="4">
+                                    <div class="rating-item" data-item-value="1">*</div>
+                                    <div class="rating-item" data-item-value="2">*</div>
+                                    <div class="rating-item" data-item-value="3">*</div>
+                                    <div class="rating-item" data-item-value="4">*</div>
+                                    <div class="rating-item" data-item-value="5">*</div>
+                                </div>
+                                <span class="hotel_choice-rating">Рейтинг:8,5</span>
                             </li>
-                            <li class="result-item">
-                                <label>
-                                    <input type="submit" name="big">
-                                    <img src="#" alt="Корзина">
-                                    <span class="visually-hidden">Крупные значки</span>
+                            <li class="hotel_choice-item">
+                                <img src="#" alt="Villas at Poco Diablo" class="hotel_choice-img">
+                                <h3 class="hotel_choice-title">Villas at Poco Diablo</h3>
+                                <span class="hotel_choice-span">Гостиница</span>
+                                <span class="hotel_choice-span">От 5000 ₽</span>
+                                <label class="hotel_choice-label">
+                                    <a href="#" class="hotel_choice-details">Подробнее</a>
                                 </label>
+                                <img src="#" alt="5 stars">
+                                <div class="rating" data-total-value="4">
+                                    <div class="rating-item" data-item-value="1">*</div>
+                                    <div class="rating-item" data-item-value="2">*</div>
+                                    <div class="rating-item" data-item-value="3">*</div>
+                                    <div class="rating-item" data-item-value="4">*</div>
+                                    <div class="rating-item" data-item-value="5">*</div>
+                                </div>
+                                <span class="hotel_choice-rating">Рейтинг:9,2</span>
                             </li>
-                            <li class="result-item">
-                                <label>
-                                    <input type="submit" name="list">
-                                    <img src="#" alt="Показывает меню действий">
-                                    <span class="visually-hidden">Список</span>
+                            <li class="hotel_choice-item">
+                                <img src="#" alt="Desert Quail Inn" class="hotel_choice-img">
+                                <h3 class="hotel_choice-title">Desert Quail Inn</h3>
+                                <span class="hotel_choice-span">Гостиница</span>
+                                <span class="hotel_choice-span">От 2500 ₽</span>
+                                <label class="hotel_choice-label">
+                                    <a href="#" class="hotel_choice-details">Подробнее</a>
                                 </label>
+                                <img src="#" alt="5 stars">
+                                <div class="rating" data-total-value="3">
+                                    <div class="rating-item" data-item-value="1">*</div>
+                                    <div class="rating-item" data-item-value="2">*</div>
+                                    <div class="rating-item" data-item-value="3">*</div>
+                                    <div class="rating-item" data-item-value="4">*</div>
+                                    <div class="rating-item" data-item-value="5">*</div>
+                                </div>
+                                <span class="hotel_choice-rating">Рейтинг:6,9</span>
+                            </li>
+                            <li class="hotel_choice-item">
+                                <img src="#" alt="GreenTree Inn" class="hotel_choice-img">
+                                <h3 class="hotel_choice-title">GreenTree Inn</h3>
+                                <span class="hotel_choice-span">Гостиница</span>
+                                <span class="hotel_choice-span">От 1500 ₽</span>
+                                <label class="hotel_choice-label">
+                                    <a href="#" class="hotel_choice-details">Подробнее</a>
+                                </label>
+                                <img src="#" alt="5 stars">
+                                <div class="rating" data-total-value="2">
+                                    <div class="rating-item" data-item-value="1">*</div>
+                                    <div class="rating-item" data-item-value="2">*</div>
+                                    <div class="rating-item" data-item-value="3">*</div>
+                                    <div class="rating-item" data-item-value="4">*</div>
+                                    <div class="rating-item" data-item-value="5">*</div>
+                                </div>
+                                <span class="hotel_choice-rating">Рейтинг:5,0</span>
                             </li>
                         </ul>
-                    </select>
-                </section>
+                        <div class="breadcrumps">
+                            <ul class="breadcrumps-link">
+                                <li class="breadcrumps-item">
+                                    <a href="#" class="breadcrumps-list">1</a>
+                                </li>
+                                <li class="breadcrumps-item">
+                                    <a href="#" class="breadcrumps-list">2</a>
+                                </li>
+                                <li class="breadcrumps-item">
+                                    <a href="#" class="breadcrumps-list">3</a>
+                                </li>
+                                <li class="breadcrumps-item">
+                                    <a href="#" class="breadcrumps-list">4</a>
+                                </li>
+                                <li class="breadcrumps-item">
+                                    <a href="#" class="breadcrumps-list">...</a>
+                                </li>
+                                <li class="breadcrumps-item">
+                                    <a href="#" class="breadcrumps-list">10</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="subscribe catalog-subscribe">
+                        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                        <p class="subscribe-text">Только полезная информация и никакого спама, <br>честное бойскаутское!
+                        </p>
+                        <form method="post" action="#">
+                            <input type="email" name="email" id="email">
+                            <input type="submit" value="ПОДПИСАТЬСЯ" placeholder="Ваш e-mail">
+                        </form>
+                    </section>
         </main>
-        <footer>
-            <section class="subscribe catalog-subscribe">
-                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-                <p class="subscribe-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-                <form method="post" action="#">
-                    <input type="email" name="email" id="email">
-                    <input type="submit" value="ПОДПИСАТЬСЯ" placeholder="Ваш e-mail">
-                </form>
-            </section>
+        <footer class="footer-catalog">
             <ul class="social-list">
                 <li class="social-item">
                     <a class="social-item-button social-link" href="#">
