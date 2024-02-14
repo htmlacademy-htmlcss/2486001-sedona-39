@@ -12,7 +12,6 @@ body {
 
 .navigation {
     color: #000000;
-    background-color: #ffffff;
 }
 
 .navigation-link {
@@ -67,14 +66,17 @@ body {
 
 .advantages-item:nth-child(2) {
     background-color: rgba(131, 179, 211, 0.12);
+    color: rgba(0, 0, 0, 1);
 }
 
 .advantages-item:nth-child(3) {
     background-color: rgba(131, 179, 211, 0.2);
+    color: rgba(0, 0, 0, 1);
 }
 
 .advantages-item:nth-child(4) {
     background-color: rgba(131, 179, 211, 0.12);
+    color: rgba(0, 0, 0, 1);
 }
 
 .advantages-item:nth-child(5) {
@@ -88,7 +90,6 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: rgba(0, 0, 0, 1);
 }
 
 .advantages-item-text {
@@ -97,7 +98,6 @@ body {
     font-weight: 400px;
     line-height: 21px;
     text-align: center;
-    color: rgba(0, 0, 0, 1);
 }
 
 .user-link-button {
