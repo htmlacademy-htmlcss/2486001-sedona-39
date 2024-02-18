@@ -143,11 +143,11 @@ li {
 }
 
 .service-text {
-    Font-family: "PT Sans" sans-serif;
-    font-Weight: 400px;
-    font-Size: 22px;
-    Line-height: 26px;
-    text-Align: Center;
+    font-family: "PT Sans" sans-serif;
+    font-weight: 400px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: Center;
     color: rgba(51, 51, 51, 1);
 }
 
@@ -208,11 +208,11 @@ li {
 }
 
 .pagination-subscribe-title {
-    Font-family: "PT Sans" sans-serif;
-    font-Weight: 700px;
-    font-Size: 30px;
-    Line-height: 36px;
-    text-Align: Center;
+    font-family: "PT Sans" sans-serif;
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: Center;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -416,11 +416,11 @@ li {
 }
 
 .pagination-subscribe-title-catalog {
-    Font-family: "PT Sans" sans-serif;
-    font-Weight: 700px;
-    font-Size: 30px;
-    Line-height: 36px;
-    text-Align: Center;
+    font-family: "PT Sans" sans-serif;
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: Center;
     color: rgba(0, 0, 0, 1);
 }
 
