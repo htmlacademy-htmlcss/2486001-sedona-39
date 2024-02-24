@@ -33,12 +33,14 @@ main {
   margin: 0 auto;
   background-color: #ffffff;
 }
+
 footer {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
   height: 120px;
 }
+
 .main-container {
   flex-grow: 1;
 }
@@ -92,8 +94,8 @@ footer {
 }
 
 .image-sedona-in-index {
-display: flex;
-;
+  display: block;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -193,6 +195,7 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .advantages-item:nth-child(1) {
   margin: 0 auto;
   display: flex;
@@ -201,7 +204,12 @@ li {
   height: 385px;
   justify-content: space-between;
   color: rgba(255, 255, 255, 1);
-  background: rgba(130, 179, 211, 1);/*как картинку поместить вправо*/
+  background: rgba(130, 179, 211, 1);
+}
+
+.advantages-item-img-first {
+  display: block;
+  margin-left: auto;
 }
 
 .advantages-item:nth-child(2) {
@@ -250,6 +258,11 @@ li {
   flex-wrap: wrap;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(130, 179, 211, 1);
+}
+
+.advantages-item-img-second {
+  display: block;
+  margin-right: auto;
 }
 
 .advantages-item-title {
@@ -346,7 +359,6 @@ li {
   width: 400px;
   height: 385px;
   flex-direction: column;
-  /*почему то не работает*/
 }
 
 .service-item:nth-child(1) {
@@ -389,15 +401,14 @@ li {
   color: rgba(51, 51, 51, 1);
 }
 
-.find_hotel_button {
+.find_hotel_button_href {
   margin: 0 auto;
   /*почему не применилось*/
   font-family: "PT Sans" sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
-  /* почему то находится не в центре*/
+  text-align: center;/*почему не по центру*/
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
@@ -478,11 +489,13 @@ li {
   margin-right: 350px;
   width: 331;
 }
+
 .main-header-in-catalog {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
+
 .find_Hotel_Form_title_catalog {
   margin-left: 70px;
   font-family: "PT Sans" sans-serif;
@@ -539,11 +552,13 @@ li {
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
 }
+
 .filter-buttons {
   margin-left: 70px;
   display: flex;
   flex-direction: column;
 }
+
 .button-blue {
   font-family: "PT Sans" sans-serif;
   font-weight: 700px;
@@ -618,27 +633,7 @@ li {
   color: rgba(255, 255, 255, 1);
 }
 
-.hotel_choice_link {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  flex-direction: row;
-  width: 1200px;
-}
-
 .hotel_choice_item {
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 70px;
-  /*почему то не применилось*/
-  display: flex;
-  margin: 0 auto;
-  align-content: flex-start;
-  width: 340px;
-  height: 438px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
   border: 1px solid rgba(230, 230, 230, 1);
   font-family: "PT Sans" sans-serif;
 }
