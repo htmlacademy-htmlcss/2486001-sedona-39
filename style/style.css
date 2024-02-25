@@ -46,12 +46,13 @@ footer {
 }
 
 .header-logo-sedona {
-  margin: 0 auto;
-  margin-right: 70px;
-  margin-left: 30px
+  display: block;
+  margin-right: 28px;
+  margin-left: 70px
 }
 
 .navigation {
+  height: 64px;
   background-color: #ffffff;
   margin: 0 auto;
   display: flex;
@@ -63,24 +64,28 @@ footer {
   display: flex;
   flex-direction: row;
   margin-right: 285px;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation-link:nth-child(1) {
   width: 100px;
-  padding-bottom: 20px;
+  padding: 20px 16px;
 }
 
 .navigation-link:nth-child(2) {
   width: 114px;
+  padding: 20px 16px;
 }
 
 .navigation-link:nth-child(3) {
   width: 125px;
+  padding: 20px 16px;
 }
 
 .navigation-link {
   margin-right: 0;
-  display: flex;
+  display: block;
   font-family: "PT Sans Narrow", sans-serif;
   line-height: 22px;
   color: black;
@@ -90,12 +95,15 @@ footer {
 }
 
 .main-logo {
-  background: url("../images/images-main-index.jpg") no-repeat 50% 50%;
+  background-image: url("../images/images-main-index.jpg");
+  width: 1200px;
+  height:485px
 }
 
 .image-sedona-in-index {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
 }
 
 .visually-hidden {
@@ -139,7 +147,7 @@ li {
 }
 
 .user-link {
-  display: flex;
+  display: block;
   font-family: "PT Sans Narrow", sans-serif;
   line-height: 22px;
   color: black;
@@ -250,7 +258,7 @@ li {
 
 .advantages-item:nth-child(5) {
   margin: 0 auto;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-between;
   height: 385px;
   width: 1200px;
@@ -261,12 +269,12 @@ li {
 }
 
 .advantages-item-img-second {
-  display: block;
-  margin-right: auto;
+ order: -1;
 }
 
 .advantages-item-title {
   margin-top: 112px;
+  align-self: center;
   font-family: "PT Sans" sans-serif;
   font-weight: 700px;
   font-size: 24px;
