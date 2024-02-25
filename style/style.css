@@ -206,6 +206,7 @@ li {
 
 .advantages-item:nth-child(1) {
   margin: 0 auto;
+  padding-left: 60px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -257,6 +258,7 @@ li {
 }
 
 .advantages-item:nth-child(5) {
+  padding-right: 60px;
   margin: 0 auto;
   flex-direction: column;
   justify-content: space-between;
