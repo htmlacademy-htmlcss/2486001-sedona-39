@@ -35,7 +35,6 @@ main {
 
 footer {
   width: 1200px;
-  margin: 0 auto;
   background-color: #ffffff;
   height: 120px;
 }
@@ -82,7 +81,6 @@ li {
 
 .navigation-list {
   display: flex;
-  flex-direction: row;
   margin-right: 285px;
   padding: 0;
   margin: 0;
@@ -112,7 +110,11 @@ li {
 }
 
 .main-logo {
-  background-image: url("../images/images-main-index.jpg");
+  background-image: url("../images/main-logo-background-white.svg"), url("../images/images-main-index.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  background-color: #82B3D3;
   width: 1200px;
   height: 485px
 }
@@ -169,18 +171,12 @@ li {
 }
 
 .advantages-list {
-  width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
 .advantages-item:nth-child(1) {
-  margin: 0 auto;
-  padding-left: 60px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   height: 385px;
   color: rgba(255, 255, 255, 1);
   background: rgba(130, 179, 211, 1);
@@ -192,9 +188,7 @@ li {
 }
 
 .advantages-item:nth-child(2) {
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   height: 385px;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -202,10 +196,7 @@ li {
 }
 
 .advantages-item:nth-child(3) {
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   height: 385px;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
@@ -213,9 +204,7 @@ li {
 }
 
 .advantages-item:nth-child(4) {
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   height: 385px;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -223,12 +212,9 @@ li {
 }
 
 .advantages-item:nth-child(5) {
-  padding-right: 60px;
-  margin: 0 auto;
-  flex-direction: column;
-  height: 385px;
   display: flex;
   flex-wrap: wrap;
+  height: 385px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(130, 179, 211, 1);
 }
@@ -236,10 +222,14 @@ li {
 .advantages-item-img-second {
   order: -1;
 }
-
+.advantages-phrasa {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 400px;
+}
 .advantages-item-title {
   margin-top: 112px;
-  align-self: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 700px;
   font-size: 24px;
@@ -257,8 +247,11 @@ li {
 }
 
 .user-link-button {
+  align-items: center;
+  display: block;
+  margin-bottom: 14px;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 34px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -400,7 +393,7 @@ li {
 }
 
 .pagination-subscribe {
-  background-color: #756157;
+  background-image: url("../images/Subscribe-background.png");
   background-position: 50% 50%;
 }
 
@@ -416,20 +409,47 @@ li {
 }
 
 .email-form {
+  display: flex;
   text-align: center;
 
 }
 
+.email-input {
+  display: block;
+  width: 452px;
+  height: 52px;
+  padding-left: 20px;
+  margin-bottom: 104px;
+  margin-left: 258px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+
+}
+
+.email-input-catalog {
+  display: block;
+  width: 452px;
+  background-color: rgba(242, 242, 242, 1);
+  height: 52px;
+  padding-left: 20px;
+  margin-bottom: 104px;
+  margin-left: 258px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
 .subscribe-button {
   margin: 0 auto;
+  margin-right: 258px;
   margin-bottom: 104px;
+  padding: 8px 50px 8px 50px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
   background-color: rgba(130, 179, 211, 1);
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
@@ -469,7 +489,16 @@ li {
   display: flex;
 }
 
+.find_Hotel_Form_list {
+  margin-top: 8px;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
+
 .find_Hotel_Form_title_catalog {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 35px;
   margin-left: 70px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700px;
@@ -480,7 +509,7 @@ li {
 
 .find_Hotel_Form {
   margin: 0 auto;
-  background-color: rgba(117, 98, 87, 1);
+ background-image: url("../images/catalog-filter.png");
   font-family: "PT Sans", sans-serif;
   background-repeat: no-repeat;
 }
@@ -495,6 +524,7 @@ li {
 }
 
 .filter-options-group {
+  margin-bottom: 73px;
   margin-left: 70px;
   width: 151px;
   height: 157px;
@@ -509,6 +539,8 @@ li {
 }
 
 .filer-options-title {
+  margin-bottom: 32px;
+  margin-top: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 700px;
   font-size: 20px;
@@ -517,12 +549,15 @@ li {
 }
 
 .filter-buttons {
-  margin-left: 70px;
+  margin-top: 58px;
+  margin-left: auto;
+  margin-right: 70px;
   display: flex;
   flex-direction: column;
 }
 
 .button-blue {
+  padding: 8px 50px 8px 50px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700px;
   font-size: 16px;
@@ -531,6 +566,7 @@ li {
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
   border: none;
+  border-radius: 4px;
   margin-bottom: 32px;
 }
 
@@ -540,8 +576,24 @@ li {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  background-color: none;
+  padding: 8px 58px 8px 58px;
   color: rgba(255, 255, 255, 1);
+  border: none;
+}
+.filter-price-list {
+  display: flex;
+}
+.catalog-filter-input-min {
+  width: 143px;
+  height: 48px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.catalog-filter-input-max {
+  width: 143px;
+  height: 48px;
+  border-radius: 0 4px 4px 0;
   border: none;
 }
 
@@ -673,11 +725,10 @@ li {
 .hotel_choice_rating {
   border-radius: 4px;
   padding: 8px 28px 8px 28px;
-  margin:  16px 0 0 180px;
+  margin: 16px 0 0 180px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
   text-align: center;
   color: rgba(51, 51, 51, 1);
   background-color: rgba(242, 242, 242, 1);
@@ -713,6 +764,7 @@ li {
   text-transform: uppercase;
   border: none;
 }
+
 .number-link {
   margin-bottom: 60px;
   display: flex;
@@ -720,6 +772,7 @@ li {
   margin-left: 70px;
   margin-top: 80px;
 }
+
 .number-list {
   margin: 0 auto;
   border-radius: 4px;

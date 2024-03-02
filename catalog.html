@@ -102,17 +102,15 @@
           <li class="main-header-li-in-catalog">
             <fieldset class="filter-options-group">
               <legend class="filer-options-title">Стоимость, ₽:</legend>
-              <ul>
+              <ul class="filter-price-list">
                 <li class="filter-options-item">
                   <label class=" control" for="min-price" class="catalog-filter-label">
-                    <input type="number" id="min-price" value="0" placeholder="от" name="mon-price"
-                      class="catalog-filter-input">
+                    <input type="number" id="min-price" value="0" placeholder="от" name="min-price" class="catalog-filter-input-min">
                   </label>
                 </li>
                 <li class="filter-options-item">
                   <label class=" control" for="max-price" class="catalog-filter-label">
-                    <input type="number" id="max-price" placeholder="до" value="9000" name="max-price"
-                      class="catalog-filter-input">
+                    <input type="number" id="max-price" placeholder="до" value="9000" name="max-price" class="catalog-filter-input-max">
                   </label>
                 </li>
             </fieldset>
@@ -243,7 +241,7 @@
         </p>
         <form class="email-form"  action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
-          <input class="email-input" type="text" name="use-email" id="email" placeholder="Ваш e-mail" class="e-mail">
+          <input class="email-input-catalog" type="text" name="use-email" id="email" placeholder="Ваш e-mail" class="e-mail">
           <button class="subscribe-button all-button" type="submit" id="subscribe">Подписаться</button>
         </form>
       </section>
@@ -270,8 +268,8 @@
       <div>
         <a class="contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
-      <a href="#">
-        <img src="images/html-academy.svg" width="115px" height="33px" alt="logo_html_academy">
+     <a href="#">
+        <img src="images/html-academy.svg" width="115px" height="33px" alt="logo_html_academy" class="logo_html_academy">
       </a>
     </footer>
   </body>
