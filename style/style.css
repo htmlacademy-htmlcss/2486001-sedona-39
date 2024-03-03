@@ -102,13 +102,19 @@ li {
   margin-right: 0;
   display: block;
   font-family: "PT Sans", sans-serif;
-  line-height: 22px;
+  line-height: 24px;
   color: black;
+  font-size: 20px;
   text-decoration: none;
   font-weight: 700;
   text-align: center;
 }
-
+.navigation-link-home {
+  border-bottom: 2px solid rgba(117, 98, 87, 1);
+}
+.navigation-link-hotels {
+  border-bottom: 2px solid rgba(117, 98, 87, 1);
+}
 .main-logo {
   background-image: url("../images/main-logo-background-white.svg"), url("../images/images-main-index.jpg");
   background-size: 100% auto, cover;
@@ -661,6 +667,7 @@ li {
 
 .hotel_choice_span.hotel_choice_span {
   font-family: "PT Sans", sans-serif;
+  margin-bottom: 16px;
   margin-left: 20px;
   font-weight: 400px;
   font-size: 18px;
@@ -669,8 +676,7 @@ li {
 }
 
 .hotel_choice_span_second {
-  margin-left: auto;
-  margin-right: 20px;
+  margin: 0 20px 16px auto;
   font-family: "PT Sans", sans-serif;
   font-weight: 400px;
   font-size: 18px;
@@ -680,8 +686,9 @@ li {
 
 .hotel_choice_item {
   width: 340px;
-  height: 458px;
+  height: 438px;
   border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 4px;
   font-family: "PT Sans", sans-serif;
 }
 
@@ -697,11 +704,10 @@ li {
 }
 
 .hotel_choice_title {
-  margin-left: 20px;
+  margin: 16px 0  16px 20px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700px;
   font-size: 24px;
-  margin-top: 16px;
   line-height: 28px;
   color: rgba(0, 0, 0, 1);
 }
