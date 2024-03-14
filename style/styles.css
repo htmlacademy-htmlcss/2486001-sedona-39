@@ -257,7 +257,7 @@ li {
 
 .advantages-sedona-better {
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 88px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400px;
@@ -273,8 +273,8 @@ li {
 
 .advantages-phrasa::before {
   order: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
+  transform: translateY(-1px);
   margin-right: 170px;
   margin-left: 170px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -283,8 +283,7 @@ li {
 
 .advantages-phrasa-first::before {
   order: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  transform: translateY(-12px);
   margin-right: 170px;
   margin-left: 170px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -292,9 +291,8 @@ li {
 }
 
 .advantages-phrasa-last::before {
+  transform: translateY(-12px);
   order: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
   margin-right: 170px;
   margin-left: 170px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -362,16 +360,17 @@ li {
 }
 
 .advantages-item-title {
-  order: 0;
-  margin-top: 102px;
   font-family: "PT Sans", sans-serif;
+  margin-top: 102px;
   font-weight: 700px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
 }
-
+.advantages-item-title-center{
+  transform: translateY(10px);
+}
 .advantages-item-text {
   order: 2;
   font-family: "PT Sans", sans-serif;
@@ -380,7 +379,9 @@ li {
   line-height: 21px;
   text-align: center;
 }
-
+.advantages-item-text-center {
+transform: translateY(10px);
+}
 .service-title {
   margin: 0 auto;
   margin-top: 64px;
@@ -418,7 +419,7 @@ li {
 }
 
 .service-item-text {
-  margin-bottom: 81px;
+  transform: translateY(-11px);
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400px;
@@ -435,6 +436,7 @@ li {
   display: flex;
   flex-direction: column;
   width: 400px;
+  min-height: 385px;
 }
 
 .service-item:nth-child(1) {
@@ -563,7 +565,12 @@ li {
   margin-left: 258px;
   border-radius: 4px 0 0 4px;
   border: none;
-
+  background-color: rgba(242, 242, 242, 1);
+ font-family: "PT Sans" ,sans-serif;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 24px;
+ color:rgba(0, 0, 0, 1);
 }
 
 .email-input-catalog {
@@ -615,12 +622,13 @@ li {
 
 .social-list {
   display: flex;
-  margin: 45px 0 48px 70px;
+  margin-top: 43px;
+  margin-left: 70px;
 }
 
 .social-link {
   display: block;
-  padding: 13px 12px;
+  padding: 13px 13px;
 }
 
 .social-icon {
@@ -641,7 +649,7 @@ li {
 
 .contacts {
   display: block;
-  margin-top: 45px;
+  margin-top: 55px;
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 22px;
@@ -649,7 +657,7 @@ li {
   text-decoration: none;
   font-weight: 400;
   text-align: center;
-  margin-left: 230px;
+  margin-left: 235px;
   margin-right: 235px;
 }
 
@@ -668,8 +676,8 @@ li {
 .logo_html_academy {
   fill: #000000;
   display: block;
-  margin-right: 70px;
-  margin-top: 45px;
+  margin-right: 68px;
+  margin-top: 48px;
 }
 
 .logo_html_academy_link:hover .logo_html_academy {
@@ -718,14 +726,18 @@ li {
 .find_Hotel_Form_list {
   margin-top: 8px;
   padding-left: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .main-header-in-catalog {
-  gap: 70px;
-  margin-left: 50px;
+ margin-left: 54px;
 }
-
+.main-header-li-in-catalog:first-child {
+ margin-right:38px;
+}
+.main-header-li-in-catalog:nth-child(3) {
+  margin-left: 112px;
+}
 .find_Hotel_Form_title_catalog {
   margin-top: 0;
   margin-bottom: 0;
@@ -772,7 +784,9 @@ li {
 .filter-options-item {
   margin-bottom: 16px;
 }
-
+.filter-options-input {
+  padding-bottom: 20px;
+}
 .filter-options-group:nth-child(3) {
   margin-left: 140px;
   width: 288px;
@@ -824,7 +838,7 @@ li {
 
 .catalog-filter-input-max {
   width: 123px;
-  padding-left: 20px;
+  padding-left: 18px;
   height: 48px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -835,7 +849,7 @@ li {
 
 .catalog-filter-input-min {
   width: 123px;
-  padding-left: 20px;
+  padding-left: 18px;
   height: 48px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -845,7 +859,7 @@ li {
 }
 
 .filter-buttons {
-  margin-top: 58px;
+  margin-top: 55px;
   margin-left: auto;
   margin-right: 70px;
   display: flex;
