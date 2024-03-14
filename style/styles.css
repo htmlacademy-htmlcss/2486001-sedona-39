@@ -736,7 +736,7 @@ transform: translateY(10px);
  margin-right:38px;
 }
 .main-header-li-in-catalog:nth-child(3) {
-  margin-left: 112px;
+  margin-left: 123px;
 }
 .find_Hotel_Form_title_catalog {
   margin-top: 0;
@@ -775,27 +775,17 @@ transform: translateY(10px);
 }
 
 .filter-options-group {
-  margin-bottom: 73px;
-  width: 151px;
-  height: 157px;
+  padding-bottom: 73px;
+  display: block;
   border: none;
 }
 
 .filter-options-item {
   margin-bottom: 16px;
+  padding-left: 12px;
 }
-.filter-options-input {
-  padding-bottom: 20px;
-}
-.filter-options-group:nth-child(3) {
-  margin-left: 140px;
-  width: 288px;
-  height: 157px;
-  border: none;
-}
-
 .filer-options-title {
-  margin-bottom: 32px;
+  padding-bottom: 25px;
   margin-top: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -838,8 +828,8 @@ transform: translateY(10px);
 
 .catalog-filter-input-max {
   width: 123px;
-  padding-left: 18px;
-  height: 48px;
+  padding-left: 20px;
+  height: 45px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -849,8 +839,8 @@ transform: translateY(10px);
 
 .catalog-filter-input-min {
   width: 123px;
-  padding-left: 18px;
-  height: 48px;
+  padding-left: 20px;
+  height: 45px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -947,10 +937,11 @@ transform: translateY(10px);
 
 .result {
   display: flex;
-  margin-bottom: 0;
+  margin-top: 12px;
 }
 
 .result-list {
+  margin-top: 18px;
   display: flex;
 }
 
@@ -959,16 +950,16 @@ transform: translateY(10px);
 }
 
 .result-item {
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   margin-right: 8px;
   border-radius: 4px;
   border: 2px solid rgba(229, 229, 229, 1);
 }
 
 .result-item:first-child {
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   margin-right: 8px;
   border-radius: 4px;
   border: 2px solid rgba(0, 0, 0, 1);
@@ -1014,7 +1005,7 @@ transform: translateY(10px);
   margin-top: 20px;
   margin-right: 70px;
   width: 292px;
-  padding-left: 20px;
+  padding-left: 16px;
   height: 49px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1070,8 +1061,8 @@ transform: translateY(10px);
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 69px;
-  margin-top: 39px;
-  padding-bottom: 40px;
+  margin-top: 21px;
+  padding-bottom: 22px;
   gap: 20px;
 }
 
@@ -1157,7 +1148,7 @@ transform: translateY(10px);
 
 .hotel_choice_rating {
   border-radius: 4px;
-  padding: 8px 26px 8px 26px;
+  padding: 8px 23px 8px 23px;
   margin: 16px 20px 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -1226,18 +1217,20 @@ transform: translateY(10px);
   color: rgba(255, 255, 255, 0.3);
 }
 .star-3::before {
-  width: 66px;
+ width:63px;
+ margin-left: 20px;
 }
 .star-4::before {
-  width: 88px;
+ width: 86px;
+ margin-left: 21px;
 }
 .star-2::before {
-  width: 44px;
+ width: 42px;
+ margin-left: 20px;
 }
 .star::before {
   content: "";
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 26px;
   display: block;
   height: 17px;
   background-image: url(../images/star-cards-catalog.svg);
@@ -1246,7 +1239,7 @@ transform: translateY(10px);
 }
 .number-link {
   border-top: 1px solid rgba(230, 230, 230, 1);
-  margin: 0 70px 60px 70px;
+  margin: 0 70px 0 70px;
   display: flex;
   gap: 8px;
   padding-top: 40px;
@@ -1277,7 +1270,7 @@ transform: translateY(10px);
 
 .number-list-pages-cards {
   position: absolute;
-  top: 20px;
+  top: 22px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1288,7 +1281,7 @@ transform: translateY(10px);
 .number-list-closed {
   margin: 0 auto;
   border-radius: 4px;
-  padding: 23px 23px;
+  padding: 0 30px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1332,7 +1325,6 @@ transform: translateY(10px);
 }
 
 .pagination-subscribe-title-catalog {
-  padding-top: 96px;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   font-weight: 700px;
@@ -1340,12 +1332,14 @@ transform: translateY(10px);
   line-height: 36px;
   text-align: Center;
   color: rgba(0, 0, 0, 1);
-  margin-top: 96px;
+  margin-top: 155px;
+  margin-bottom: 0;
 }
 
 .pagination-subscribe-text-catalog {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
+  margin-top: 20px;
   font-weight: 400px;
   line-height: 26px;
   text-align: center;

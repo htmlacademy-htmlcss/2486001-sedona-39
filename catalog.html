@@ -125,14 +125,14 @@
             <fieldset class="filter-options-group">
               <legend class="filer-options-title">Стоимость, ₽:</legend>
               <ul class="filter-price-list">
-                <li class="filter-options-item">
+                <li class="filter-options-bottom">
                   <label class="min-price-control" for="min-price" class="catalog-filter-label">
                     <input type="text" id="min-price" value="0" name="min-price"
                       class="catalog-filter-input-min">
                       <span class="price-min-phrasa">от</span>
                   </label>
                 </li>
-                <li class="filter-options-item">
+                <li class="filter-options-bottom">
                   <label class="max-price-control" for="max-price" class="catalog-filter-label">
                     <input type="text" id="max-price" value="9000" name="max-price"
                       class="catalog-filter-input-max">
@@ -149,10 +149,10 @@
         </ul>
       </section>
       <section class="result" data-test="catalog">
-        <h2 class="hotels-search">Найдено гостиниц:<span>38</span></h2>
+        <h2 class="hotels-search">Найдено гостиниц: <span>38</span></h2>
         <select class="result-select-control" aria-label="Сортировка">
-          <option value="result-popular">Сначала популярные</option>
           <option value="result-cheap">Сначала дешевые</option>
+          <option value="result-popular">Сначала популярные</option>
           <option value="result-expensive">Сначала дорогие</option>
         </select>
         <ul class="result-list">
@@ -202,7 +202,7 @@
               <div class="star star-4" role="img" aria-label="4-stars">
                 <span class="visually-hidden rating-stars">4 звезды</span>
                 </div>
-              <span class="hotel_choice_rating">Рейтинг:8,5</span>
+              <span class="hotel_choice_rating">Рейтинг: 8,5</span>
             </div>
           </li>
           <li class="hotel_choice_item">
@@ -221,7 +221,7 @@
               <div class="star star-4" role="img" aria-label="4-stars">
               <span class="visually-hidden rating-stars">4 звезды</span>
               </div>
-              <span class="hotel_choice_rating">Рейтинг:9,2</span>
+              <span class="hotel_choice_rating">Рейтинг: 9,2</span>
             </div>
           </li>
           <li class="hotel_choice_item">
@@ -240,7 +240,7 @@
               <div class="star star-3" role="img" aria-label="3-stars">
                 <span class="visually-hidden rating-stars">3 звезды</span>
                 </div>
-              <span class="hotel_choice_rating">Рейтинг:6,9</span>
+              <span class="hotel_choice_rating">Рейтинг: 6,9</span>
             </div>
           </li>
           <li class="hotel_choice_item">
@@ -259,7 +259,7 @@
               <div class="star star-2" role="img" aria-label="2-stars">
                 <span class="visually-hidden rating-stars">2 звезды</span>
                 </div>
-              <span class="hotel_choice_rating">Рейтинг:5,0</span>
+              <span class="hotel_choice_rating">Рейтинг: 5,0</span>
             </div>
           </li>
         </ul>
@@ -278,7 +278,7 @@
               <a href="#" class="number-list"><span  class="number-list-pages-cards">4</span></a>
             </li>
             <li class="number-item">
-              <a href="#" class="number-list-closed"><span  class="number-list-pages-cards">...</span></a>
+              <a href="#" class="number-list-closed"><span  class="number-list-pages-cards">. . .</span></a>
             </li>
             <li class="number-item">
               <a href="#" class="number-list"><span  class="number-list-pages-cards">10</span></a>
@@ -293,7 +293,7 @@
         </p>
         <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
-          <input class="email-input-catalog" type="text" name="use-email" id="email" placeholder="Ваш e-mail"
+          <input class="email-input" type="text" name="use-email" id="email" placeholder="Ваш e-mail"
             class="e-mail">
           <button class="subscribe-button all-button" type="submit" id="subscribe">Подписаться</button>
         </form>
