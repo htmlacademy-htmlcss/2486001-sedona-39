@@ -825,7 +825,7 @@ footer {
 
 .catalog-filter-input-max:active,
 .catalog-filter-input-max:focus {
-  border-radius: 4px 0 0 4px;
+  border-radius: 0 4px 4px 0;
   outline: 3px solid #83b3d3;
   background: #e6e6e6;
 }
@@ -847,7 +847,7 @@ footer {
 
 .catalog-filter-input-min:active,
 .catalog-filter-input-min:focus {
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px 0 0 4px;
   outline: 3px solid #83b3d3;
   background: #e6e6e6;
 }
