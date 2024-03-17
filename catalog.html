@@ -69,13 +69,6 @@
             </a>
           </li>
           <li class="find_Hotel_Form_item">
-            <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4688 1.66526 10.4688C1.79026 10.4688 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z"
-                fill="white" />
-            </svg>
-          </li>
-          <li class="find_Hotel_Form_item">
             <a class="find_Hotel_Form_item_button find_Hotel_Form_link">
               <span class="find_hotel_hotels">Гостиницы</span>
             </a>
@@ -126,14 +119,14 @@
                 </li>
                 <li class="filter-options-item">
                   <label class="control">
-                    <input class="visually-hidden filter-options-input" type="radio" name="motels" id="motels">
+                    <input class="visually-hidden filter-options-input" type="radio" name="hotels" id="motels">
                     <span class="control-radio-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
-                <li class="filter-options-item ">
-                  <label  class="control">
-                    <input class="visually-hidden filter-options-input" type="radio" name="apartmens" id="apartmens">
+                <li class="filter-options-item">
+                  <label class="control" for="apartmens">
+                    <input class="visually-hidden filter-options-input" type="radio" name="hotels" id="apartmens">
                     <span class="control-radio-mark"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
@@ -228,10 +221,8 @@
             <div class="description-cart">
               <span class="hotel_choice_span">Гостиница</span>
               <span class="hotel_choice_span_second">От 4000 ₽</span>
-              <label class="hotel_choice_label">
                 <a href="#" class="hotel_choice_details">Подробнее</a>
                 <button name="favorites" type="button" class="favorites-button">в избранное</button>
-              </label>
               <div class="star star-4" role="img" aria-label="4-stars">
                 <span class="visually-hidden rating-stars">4 звезды</span>
               </div>
@@ -247,10 +238,8 @@
             <div class="description-cart">
               <span class="hotel_choice_span">Гостиница</span>
               <span class="hotel_choice_span_second">От 5000 ₽</span>
-              <label class="hotel_choice_label">
                 <a href="#" class="hotel_choice_details">Подробнее</a>
                 <button name="favorites" type="button" class="favorites-button-2-hotel">в избранном</button>
-              </label>
               <div class="star star-4" role="img" aria-label="4-stars">
                 <span class="visually-hidden rating-stars">4 звезды</span>
               </div>
@@ -266,10 +255,8 @@
             <div class="description-cart">
               <span class="hotel_choice_span">Гостиница</span>
               <span class="hotel_choice_span_second">От 2500 ₽</span>
-              <label class="hotel_choice_label">
                 <a href="#" class="hotel_choice_details">Подробнее</a>
                 <button name="favorites" type="button" class="favorites-button">в избранное</button>
-              </label>
               <div class="star star-3" role="img" aria-label="3-stars">
                 <span class="visually-hidden rating-stars">3 звезды</span>
               </div>
@@ -285,10 +272,8 @@
             <div class="description-cart">
               <span class="hotel_choice_span">Гостиница</span>
               <span class="hotel_choice_span_second">От 1500 ₽</span>
-              <label class="hotel_choice_label">
                 <a href="#" class="hotel_choice_details">Подробнее</a>
                 <button name="favorites" type="button" class="favorites-button">в избранное</button>
-              </label>
               <div class="star star-2" role="img" aria-label="2-stars">
                 <span class="visually-hidden rating-stars">2 звезды</span>
               </div>
@@ -299,7 +284,7 @@
         <div class="numder">
           <ul class="number-link">
             <li class="number-item">
-              <a href="#" class="number-list first"><span class="number-list-pages-cards">1</span></a>
+              <a class="number-list first"><span class="number-list-pages-cards">1</span></a>
             </li>
             <li class="number-item">
               <a href="#" class="number-list"><span class="number-list-pages-cards">2</span></a>
