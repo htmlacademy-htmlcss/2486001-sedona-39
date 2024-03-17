@@ -1072,6 +1072,10 @@ footer {
 
 .result-select-control {
   margin-top: 20px;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
   margin-right: 70px;
   width: 292px;
   padding-left: 16px;
