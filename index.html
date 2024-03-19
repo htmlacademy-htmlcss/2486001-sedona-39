@@ -123,11 +123,12 @@
         <button class="find_hotel_button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="pagination-subscribe" data-test="subscribe">
+        <h2 class="visually-hidden">Секция подписки</h2>
         <p class="pagination-subscribe-title"><b>Подпишитесь на рассылку</b></p>
         <p class="pagination-subscribe-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
-          <input class="email-input" type="text" name="use-email" id="email" placeholder="Ваш e-mail" class="e-mail">
+          <input class="email-input e-mail" type="text" name="use-email" id="email" placeholder="Ваш e-mail">
           <button class="subscribe-button all-button" type="submit" id="subscribe">Подписаться</button>
         </form>
       </section>
@@ -178,23 +179,28 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        </section>
-        <section class="-section-modal-form">
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <ul class="modal-list">
               <li class="modal-item">
-                <label class="modal-label">Дата Заезда:</label>
+                <label class="modal-label">
+                  <span class="modal-text-input-data">Дата Заезда:</span>
+                </label>
                 <input class="modal-input modal-input-data-first" type="text" name="date-stop-by" placeholder="Укажите дату" value="27 апреля 2020">
                 <span class="modal-phrasa phrasa-stop-by">Мы не можем отправить вас в прошлое.</span>
               </li>
               <li class="modal-item">
-                <label class="modal-label">Дата Выезда:</label>
+                <label class="modal-label">
+                  <span class="modal-text-input-data">Дата Выезда:</span>
+                </label>
                 <input class="modal-input  modal-input-data-second" type="text" name="date-departure" placeholder="Укажите дату" value="1 сентября 2023">
                 <span class="modal-phrasa phrasa-departure">На эти даты есть свободные номера. Пока есть.</span>
               </li>
               <li class="modal-item">
-                <label class="modal-label">Взрослые:</label>
+                <label class="modal-label">
+                  <span class="modal-text-input-data">Взрослые:</span>
+                </label>
                 <input  class="modal-input modal-input-quantity-first" type="number" name="number-big-people" value="2" min="0" max="30">
+                <div class="modal-quantity">
                 <button class="modal-quantity-button-minus" type="button">
                   <span class="visually-hidden">Меньше</span>
                   <svg class="button-minus-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,10 +213,12 @@
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
                   </svg>
                 </button>
+                </div>
               </li>
               <li class="modal-item">
-                <span class="modal-label">
-                  <label class="modal-label modal-label-last">Дети:</label>
+                  <label class="modal-label modal-label-last">
+                    <span class="modal-text-input-data">Дети:</span>
+                    </label>
                   <span class="modal-tooltip">
                     <button class="tooltip-toggle" type="button">
                       <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12">
@@ -220,6 +228,7 @@
                     <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                   <input class="modal-input modal-input-quantity-second" type="number" name="number-small-people" value="2" min="0" max="30">
+                  <div class="modal-quantity">
                   <button class="modal-quantity-button-minus" type="button">
                     <span class="visually-hidden">Меньше</span>
                     <svg class="button-minus-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,6 +241,7 @@
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
                     </svg>
                   </button>
+                  </div>
               </li>
             </ul>
             <button class="modal-button">Найти</button>

@@ -35,21 +35,20 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   width: 1200px;
-  z-index: 2;
   margin: 0 auto;
 }
 
 main {
   position: relative;
-  background-color: #ffffff;
-  width: 1200px;
+  background-color: rgba(255, 255, 255, 1);
   margin: 0 auto;
+  width: 1200px;
 }
 
 footer {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   width: 1200px;
   min-height: 120px;
 }
@@ -74,6 +73,7 @@ footer {
 /*header*/
 .header-logo-sedona {
   display: block;
+  z-index: 1;
   position: absolute;
   margin-left: 70px;
 }
@@ -85,7 +85,7 @@ footer {
 .navigation {
   display: flex;
   margin: 0 auto;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
 .navigation-list {
@@ -103,7 +103,7 @@ footer {
   font-weight: 700;
   line-height: 24px;
   text-align: center;
-  color: black;
+  color: rgba(0, 0, 0, 1);
   position: relative;
   display: block;
   padding: 20px 16px;
@@ -122,12 +122,12 @@ footer {
   bottom: 0;
   left: -3px;
   margin: auto;
-  fill: #000000;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .user-link:hover .navigation-icon,
 .user-link:focus .navigation-icon {
-  fill: #756157;
+  fill: rgba(117, 97, 87, 1);
 }
 
 .user-link:active .navigation-icon {
@@ -152,12 +152,13 @@ footer {
   right: 16px;
   left: 16px;
   bottom: 0;
-  border-bottom: 2px solid #756157;
+  border-bottom: 2px solid rgba(117, 98, 87, 1);
   content: "";
 }
 
 .user-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   max-width: 270px;
@@ -193,8 +194,8 @@ footer {
   line-height: 20px;
   text-align: center;
   align-items: center;
-  color: #ffffff;
-  background-color: #756157;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(117, 98, 87, 1);
   display: block;
   margin-top: 14px;
   padding: 8px 34px;
@@ -240,11 +241,12 @@ footer {
 
 /*main*/
 .main-logo {
+  z-index: -2;
   background-image: url("../images/main-logo-background-white.svg"), url("../images/images-main-index.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
-  background-color: #82B3D3;
+  background-color: rgba(130, 179, 211, 1);
 }
 
 .image-sedona-in-index {
@@ -255,6 +257,7 @@ footer {
 }
 
 .advantages-title {
+  max-width: 630px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -269,6 +272,7 @@ footer {
 
 .advantages-sedona-better {
   font-family: "PT Sans", sans-serif;
+  max-width: 660px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -368,6 +372,7 @@ footer {
   line-height: 21px;
   text-align: center;
   order: 2;
+  margin-bottom: 100px;
 }
 
 .service-list {
@@ -477,9 +482,9 @@ footer {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   margin: 0 auto;
-  background-color: #756157;
+  background-color: rgba(117, 97, 87, 1);
   border: none;
   border-radius: 4px;
   display: block;
@@ -511,6 +516,8 @@ footer {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  max-width: 430px;
+  margin: 0 auto;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
   padding-top: 100px;
@@ -519,12 +526,15 @@ footer {
 
 .pagination-subscribe {
   background-image: url("../images/subscribe-background.png");
-  background-color: #82B3D3;
+  background-size: cover;
+  background-color: rgba(130, 179, 211, 1);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .pagination-subscribe-text {
+  max-width: 500px;
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -573,7 +583,7 @@ footer {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   margin-right: 258px;
   margin-bottom: 104px;
   padding: 8px 50px 8px 50px;
@@ -607,7 +617,7 @@ footer {
   right: 16px;
   left: 16px;
   bottom: 0;
-  border-bottom: 2px solid #756157;
+  border-bottom: 2px solid rgba(117, 98, 87, 1);
   content: "";
 }
 
@@ -621,7 +631,7 @@ footer {
 }
 
 .button_home_in_catalog {
-  fill: #ffffff;
+  fill: rgba(255, 255, 255, 1);
 }
 
 .find_Hotel_Form_title_catalog {
@@ -642,7 +652,8 @@ footer {
 .find_Hotel_Form {
   background-image: url("../images/catalog-filter.png");
   background-repeat: no-repeat;
-  background-color: #82B3D3;
+  background-size: cover;
+  background-color: rgba(130, 179, 211, 1);
   margin: 0 auto;
 }
 
@@ -888,8 +899,8 @@ footer {
 .catalog-filter-input-max:active,
 .catalog-filter-input-max:focus {
   border-radius: 0 4px 4px 0;
-  outline: 3px solid #83b3d3;
-  background: #e6e6e6;
+  outline: 3px solid rgba(130, 179, 211, 1);
+  background: rgba(230, 230, 230, 1);
 }
 
 .catalog-filter-input-max {
@@ -910,8 +921,8 @@ footer {
 
 .catalog-filter-input-min:active,
 .catalog-filter-input-min:focus {
-  outline: 3px solid #83b3d3;
-  background: #e6e6e6;
+  outline: 3px solid rgba(130, 179, 211, 1);
+  background: rgba(230, 230, 230, 1);
   border-radius: 4px 0 0 4px;
 }
 
@@ -939,6 +950,7 @@ footer {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  max-width: 200px;
   text-transform: uppercase;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
@@ -987,6 +999,7 @@ footer {
 }
 
 .button-empty {
+  max-width: 200px;
   cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -1022,13 +1035,13 @@ footer {
 
 .range-bar {
   position: absolute;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 1);
   height: 4px;
 }
 
 .range-toggle {
   position: absolute;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 1);
   border: none;
   border-radius: 5px;
   width: 20px;
@@ -1047,11 +1060,11 @@ footer {
 }
 
 .range-toggle:active {
-  outline: 2px solid #83b3d3;
+  outline: 2px solid rgba(130, 179, 211, 1);
 }
 
 .range-toggle:focus-visible {
-  outline: 3px solid #83b3d3;
+  outline: 3px solid rgba(130, 179, 211, 1);
 }
 
 .catalog-filter-input-min::-webkit-outer-spin-button,
@@ -1072,7 +1085,7 @@ footer {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 1);
   border-bottom: 2px solid rgba(117, 98, 87, 1);
   width: 68px;
 }
@@ -1122,11 +1135,11 @@ footer {
   bottom: 0;
   left: -2px;
   margin: auto;
-  fill: #000000;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .view-button-current {
-  border: 2px solid #000000;
+  border: 2px solid rgba(0, 0, 0, 1);
   pointer-events: none;
   cursor: default;
 }
@@ -1178,7 +1191,7 @@ footer {
 }
 
 .button-icons-catalog {
-  fill: #000000;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .filter-options-label {
@@ -1287,7 +1300,7 @@ footer {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   background-color: rgba(117, 97, 87, 1);
   border-radius: 4px;
   padding: 8px 26px 8px 26px;
@@ -1325,7 +1338,7 @@ footer {
   background-color: rgba(242, 242, 242, 1);
   border-radius: 4px;
   padding: 8px 23px 8px 23px;
-  margin: 16px 20px 0 auto;
+  margin: 16px 20px 20px auto;
 }
 
 .favorites-button {
@@ -1337,7 +1350,7 @@ footer {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   background-color: rgba(130, 179, 211, 1);
   border-radius: 4px;
   border: none;
@@ -1374,7 +1387,7 @@ footer {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   background-color: rgba(125, 181, 79, 1);
   border-radius: 4px;
   margin-right: 20px;
@@ -1510,7 +1523,7 @@ footer {
 }
 
 .pagination-subscribe-catalog {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   font-family: "PT Sans", sans-serif;
 }
 
@@ -1587,38 +1600,38 @@ footer {
   text-decoration: none;
   font-weight: 400;
   text-align: center;
-  color: black;
+  color: rgba(0, 0, 0, 1);
   display: block;
   padding: 55px;
   margin: 0 180px;
 }
 
 .contacts:hover {
-  color: #756157;
+  color: rgba(117, 97, 87, 1);
 }
 
 .contacts:focus-visible {
   outline: 2px solid rgba(104, 162, 202, 1);
-  color: #756157;
+  color: rgba(117, 97, 87, 1);
 }
 
 .contacts:active {
-  color: #7561574d;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .logo_html_academy {
-  fill: #000000;
+  fill: rgba(0, 0, 0, 1);
   display: block;
   margin-right: 68px;
   margin-top: 48px;
 }
 
 .logo_html_academy_link:hover .logo_html_academy {
-  fill: #756157;
+  fill: rgba(117, 97, 87, 1);
 }
 
 .logo_html_academy_link:focus-visible .logo_html_academy {
-  fill: #756157;
+  fill: rgba(117, 97, 87, 1);
 }
 
 .logo_html_academy_link:active .logo_html_academy {
@@ -1637,6 +1650,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
   background-color: rgba(242, 242, 242, 0.8);
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1654,9 +1668,8 @@ footer {
 .modal-auth {
   position: relative;
   margin: auto;
-  width: 717px;
-  z-index: 1;
-  background-color: #ffffff;
+  min-width: 717px;
+  background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   text-align: left;
@@ -1706,6 +1719,7 @@ footer {
   margin-left: 70px;
   margin-top: 0;
   padding-top: 64px;
+  max-width: 500px;
 }
 
 .modal-label {
@@ -1714,20 +1728,25 @@ footer {
   font-weight: 700;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
-  max-width: 120px;
 }
 
 .modal-label-last {
+  margin-left: 35px;
+}
+
+.modal-text-input-data {
+  display: inline-block;
   max-width: 120px;
-  margin-left: 85px;
 }
 
 .modal-phrasa {
+  content: "";
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  margin-left: 157px;
+  position: absolute;
+  left: 27%;
+  top: 52px;
 }
 
 .phrasa-departure {
@@ -1739,6 +1758,8 @@ footer {
 }
 
 .modal-list {
+  gap: 48px;
+  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   margin: 64px 0 0 70px;
@@ -1747,7 +1768,6 @@ footer {
 
 .modal-item {
   position: relative;
-  margin-bottom: 27px;
   list-style-type: none;
 }
 
@@ -1805,27 +1825,32 @@ footer {
 
 .modal-quantity-button-plus,
 .modal-quantity-button-minus {
-  position: absolute;
+  position: relative;
   display: block;
-  height: 48px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   padding: 0;
-  font-family: inherit;
-  background-color: transparent;
   border: none;
   border-radius: 4px;
+  background-color: transparent;
   outline: none;
   cursor: pointer;
 }
 
 .modal-quantity-button-plus {
-  top: 0;
-  right: 3px;
+  right: 10px;
 }
 
 .modal-quantity-button-minus {
-  top: 0;
-  right: 74px;
+  right: 60px;
+}
+
+.modal-quantity {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .button-minus-svg,
@@ -1848,7 +1873,7 @@ footer {
 .modal-quantity-button-plus:focus-visible .button-plus-svg,
 .modal-quantity-button-minus:active .button-minus-svg,
 .modal-quantity-button-plus:active .button-plus-svg {
-  fill: #000000;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .modal-quantity-button-minus:focus-visible .button-minus-svg,
@@ -1906,7 +1931,7 @@ footer {
   border: none;
   padding: 18px 256px;
   border-radius: 10px;
-  margin: 18px 0 64px 70px;
+  margin: 45px 0 64px 70px;
 }
 
 .modal-button:disabled {
@@ -1954,7 +1979,7 @@ footer {
 
 .tooltip-icon {
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   display: block;
   padding: 6px;
 }
