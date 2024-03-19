@@ -470,6 +470,7 @@ footer {
 }
 
 .find_hotel_button {
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -517,7 +518,7 @@ footer {
 }
 
 .pagination-subscribe {
-  background-image: url("../images/Subscribe-background.png");
+  background-image: url("../images/subscribe-background.png");
   background-color: #82B3D3;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -565,6 +566,7 @@ footer {
 }
 
 .subscribe-button {
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -705,6 +707,7 @@ footer {
 }
 
 .control-mark {
+  cursor: pointer;
   position: absolute;
   top: 2px;
   left: 0;
@@ -726,6 +729,7 @@ footer {
 }
 
 .control-radio-mark {
+  cursor: pointer;
   position: absolute;
   top: 2px;
   left: 0;
@@ -784,6 +788,7 @@ footer {
 }
 
 .control-label {
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-weight: 400px;
   font-size: 18px;
@@ -928,6 +933,7 @@ footer {
 }
 
 .button-blue {
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -981,6 +987,7 @@ footer {
 }
 
 .button-empty {
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1137,6 +1144,7 @@ footer {
 }
 
 .result-select-control {
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1321,6 +1329,7 @@ footer {
 }
 
 .favorites-button {
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1357,6 +1366,7 @@ footer {
 }
 
 .favorites-button-2-hotel {
+  cursor: pointer;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1943,6 +1953,7 @@ footer {
 }
 
 .tooltip-icon {
+  cursor: pointer;
   color: #ffffff;
   display: block;
   padding: 6px;
