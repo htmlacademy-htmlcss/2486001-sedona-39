@@ -1014,12 +1014,14 @@ footer {
 }
 
 .catalog-filter-input-min {
+  -moz-appearance: textfield;
   border: none;
   border-radius: 4px 0 0 4px;
   margin-right: 2px;
 }
 
 .catalog-filter-input-max {
+  -moz-appearance: textfield;
   border: none;
   border-radius: 0 4px 4px 0;
 }
@@ -1656,7 +1658,6 @@ footer {
 }
 
 .modal-container-close {
-  display: none;
 }
 
 .modal {
@@ -1888,7 +1889,7 @@ footer {
 }
 
 .modal-input-quantity-first {
-  appearance: none;
+  -moz-appearance: textfield;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -1901,7 +1902,7 @@ footer {
 }
 
 .modal-input-quantity-second {
-  appearance: none;
+  -moz-appearance: textfield;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
