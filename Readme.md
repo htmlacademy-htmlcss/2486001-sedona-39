@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Савелий Шмаков](https://up.htmlacademy.ru/htmlcss/39/user/2486001).
-* Наставник: `Неизвестно`.
+* Наставник: [Карина Королева](https://htmlacademy.ru/profile/id1526731).
+* Сайт: [Мой проект Седона](https://l1ghtmanch4k.github.io/2486001-sedona-39/).
 
 ---
 
