@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" type="image/png" size="32x32" href="images/favicon.png">
   </head>
 
   <body>
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="header-logo-sedona" href="#">
-          <img src="images/logo.png" width="140" height="70" alt="logo_sedona_header">
+          <img src="images/logo.png" width="140" height="70" alt="логотип Седоны в шапке">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -53,11 +54,11 @@
       </nav>
     </header>
     <main class="main-catalog main-container" data-test="main">
-      <section class="find-Hotel-Form" data-test="filter">
-        <h1 class="find-Hotel-Form-title-catalog">Гостиницы Седоны</h1>
-        <ol class="find-Hotel-Form-list">
-          <li class="find-Hotel-Form-item">
-            <a class="find-Hotel-Form-item-button find-Hotel-Form-link" href="index.html">
+      <section class="find-hotel-form" data-test="filter">
+        <h1 class="find-hotel-form-title-catalog">Гостиницы Седоны</h1>
+        <ol class="find-hotel-form-list">
+          <li class="find-hotel-form-item">
+            <a class="find-hotel-form-item-button find-hotel-form-link" href="index.html">
               <svg class="button-home-in-catalog" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13">
                 <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
                 <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
@@ -65,8 +66,8 @@
               <span class="visually-hidden">Домой</span>
             </a>
           </li>
-          <li class="find-Hotel-Form-item">
-            <a class="find-Hotel-Form-item-button find-Hotel-Form-link">
+          <li class="find-hotel-form-item">
+            <a class="find-hotel-form-item-button find-hotel-form-link">
               <span class="find-hotel-hotels">Гостиницы</span>
             </a>
           </li>
@@ -230,7 +231,7 @@
           <li class="hotel-choice-item">
             <a class="hotel-choice-span-href" href="#">
               <img class="hotel-choice-img" src="images/hotel-1-in-catalog.jpg" width="300" height="212"
-                alt="Amara Resort & Spa">
+                alt="Amara Resort & Spa отель в 1 карточке">
               <h3 class="hotel-choice-title">Amara Resort & Spa</h3>
             </a>
             <div class="description-cart">
@@ -247,7 +248,7 @@
           <li class="hotel-choice-item">
             <a class="hotel-choice-span-href" href="#">
               <img class="hotel-choice-img" src="images/hotel-2-in-catalog.jpg" width="300" height="212"
-                alt="Villas at Poco Diablo">
+                alt="Villas at Poco Diablo отель во 2 карточке">
               <h3 class="hotel-choice-title">Villas at Poco Diablo</h3>
             </a>
             <div class="description-cart">
@@ -264,7 +265,7 @@
           <li class="hotel-choice-item">
             <a class="hotel-choice-span-href" href="#">
               <img class="hotel-choice-img" src="images/hotel-3-in-catalog.jpg" width="300" height="212"
-                alt="Desert Quail Inn">
+                alt="Desert Quail Inn отель в 3 карточке">
               <h3 class="hotel-choice-title">Desert Quail Inn</h3>
             </a>
             <div class="description-cart">
@@ -281,7 +282,7 @@
           <li class="hotel-choice-item">
             <a class="hotel-choice-span-href" href="#">
               <img class="hotel-choice-img" src="images/hotel-4-in-catalog.jpg" width="300" height="212"
-                alt="GreenTree Inn">
+                alt="GreenTree Inn отель в 4 карточке">
               <h3 class="hotel-choice-title">GreenTree Inn</h3>
             </a>
             <div class="description-cart">
@@ -324,7 +325,7 @@
         <p class="pagination-subscribe-text-catalog">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
-          <input class="email-input e-mail" type="text" name="use-email" id="email" placeholder="Ваш e-mail">
+          <input class="email-input e-mail" type="text" name="use-email" id="email" placeholder="Ваш e-mail" required>
           <button class="subscribe-button all-button" type="submit" id="subscribe">Подписаться</button>
         </form>
       </section>
@@ -361,7 +362,7 @@
           </a>
         </li>
       </ul>
-      <div>
+      <div  class="contacts-section">
         <a class="contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
       <a class="logo-html-academy-link" href="#">
