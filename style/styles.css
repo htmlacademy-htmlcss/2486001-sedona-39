@@ -396,6 +396,7 @@ footer {
   text-transform: uppercase;
   margin-top: 64px;
   margin-bottom: 20px;
+  padding: 0 70px;
 }
 
 .service-text {
@@ -406,6 +407,7 @@ footer {
   text-align: center;
   color: #333333;
   margin-bottom: 64px;
+  padding: 0 70px;
 }
 
 .service-item-title {
@@ -450,6 +452,8 @@ footer {
 }
 
 .find-hotel-text-first {
+  max-width: 510px;
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -462,6 +466,8 @@ footer {
 }
 
 .find-hotel-text-second {
+  max-width: 600px;
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -644,6 +650,7 @@ footer {
 }
 
 .find-hotel-form-item {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
@@ -661,20 +668,18 @@ footer {
 }
 
 .find-hotel-form-link {
-  position: relative;
   list-style-type: none;
-  display: block;
 }
 
-.find-hotel-form-item:not(:last-child)::after {
+.find-hotel-form-item:not(:first-child)::before {
   width: 8px;
   height: 21px;
+  position: absolute;
+  top: 5px;
+  left: -18px;
   background-image: url("../images/arrows-catalog.svg");
   background-repeat: no-repeat;
   content: "";
-  position: absolute;
-  top: 5px;
-  left: 22px;
 }
 
 .main-header-li-in-catalog {
@@ -1136,7 +1141,8 @@ footer {
 }
 
 .view-button:focus-visible {
-  outline: 2px solid #82B3D3;
+  border: 2px solid #82B3D3;
+  outline: none;
 }
 
 .view-button:active {
@@ -1191,12 +1197,10 @@ footer {
   height: 49px;
 }
 
-.result-select-control:hover {
-  outline: 2px solid #82B3D3;
-}
-
+.result-select-control:hover,
 .result-select-control:focus-visible {
-  outline: 2px solid #82B3D3;
+  border: 2px solid #82B3D3;
+  outline: none;
   border-radius: 4px;
 }
 
@@ -1285,7 +1289,7 @@ footer {
 }
 
 .hotel-choice-span-href:focus-visible .hotel-choice-title {
-  outline: 2px solid #82B3D3;
+ outline: 2px solid #82B3D3;
 }
 
 .hotel-choice-span-href:focus-visible .hotel-choice-img {
@@ -1308,7 +1312,9 @@ footer {
 .hotel-choice-title:active {
   opacity: 0.3;
 }
-
+.hotel-choice-title:focus-visible {
+  outline: none;
+}
 .hotel-choice-details {
   align-self: center;
   max-width: 90px;
@@ -1551,6 +1557,8 @@ footer {
 }
 
 .pagination-subscribe-title-catalog {
+  margin: 0 auto;
+  max-width: 410px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -1563,6 +1571,8 @@ footer {
 }
 
 .pagination-subscribe-text-catalog {
+  margin: 0 auto;
+  max-width: 480px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   margin-top: 20px;
@@ -1617,14 +1627,14 @@ footer {
 }
 
 .contacts-section {
-  margin: 55px 235px 0 auto;
+  margin: 45px 235px 0 auto;
   max-width: 340px;
 }
 
 .contacts {
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
-  line-height: 22px;
+  line-height: 40px;
   text-decoration: none;
   font-weight: 400;
   text-align: center;
