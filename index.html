@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" type="image/png" size="32x32" href="images/favicon.png">
   </head>
 
   <body>
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="header-logo-sedona" href="#">
-          <img src="images/logo.png" width="140" height="70" alt="logo_welcome_Sedona">
+          <img src="images/logo.png" width="140" height="70" alt="логотип седоны в шапке">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -55,7 +56,7 @@
     <main class="main-index main-container" data-test="main">
       <h1 class="main-title visually-hidden">Выбор гостиниц в городе Sedona</h1>
       <div class="main-logo" data-test="hero">
-        <img class="image-sedona-in-index" src="images/sedona.svg" alt="welcome" width="458" height="353">
+        <img class="image-sedona-in-index" src="images/sedona.svg" alt="картинка добро пожаловать в Седону" width="458" height="353">
       </div>
       <section class="advantages" data-test="advantages">
         <h2 class="advantages-title-h2 visually-hidden">Преимущества города Sedona</h2>
@@ -69,7 +70,7 @@
               <h3 class="advantages-item-title">Настоящий<br>городок</h3>
               <p class="advantages-item-text">Седона — не аттракцион для <br>туристов, там течёт своя <br>жизнь</p>
             </div>
-            <img class="advantages-item-img-first" src="images/small-city.jpg" width="800" height="385" alt="realy_city">
+            <img class="advantages-item-img-first" src="images/small-city.jpg" width="800" height="385" alt="картинка с не большим городком в Седоне">
           </li>
           <li class="advantages-item">
             <div class="advantages-phrasa">
@@ -94,7 +95,7 @@
               <h3 class="advantages-item-title">Там есть<br>мост дьявола</h3>
               <p class="advantages-item-text">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
             </div>
-            <img class="advantages-item-img-second" src="images/most-diavola.jpg" width="800" height="385" alt="most-diavola">
+            <img class="advantages-item-img-second" src="images/most-diavola.jpg" width="800" height="385" alt="картинка с мостом Дьявола">
           </li>
         </ul>
       </section>
@@ -118,9 +119,9 @@
       </section>
       <section class="find-hotel" data-test="search">
         <h2 class="visually-hidden search-hotel-in-sedona">Поиск гостиницы в Седоне</h2>
-        <h2 class="find-hotel-text-first">Заинтересовались?</h2>
+        <p class="find-hotel-text-first">Заинтересовались?</p>
         <p class="find-hotel-text-second">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="find-hotel-button">Поиск гостиницы в Седоне</button>
+        <button class="find-hotel-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="pagination-subscribe" data-test="subscribe">
         <h2 class="visually-hidden">Секция подписки</h2>
@@ -128,7 +129,7 @@
         <p class="pagination-subscribe-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
-          <input class="email-input e-mail" type="text" name="use-email" id="email" placeholder="Ваш e-mail">
+          <input class="email-input e-mail" type="text" name="use-email" id="email" placeholder="Ваш e-mail" required>
           <button class="subscribe-button all-button" type="submit" id="subscribe">Подписаться</button>
         </form>
       </section>
@@ -160,7 +161,7 @@
           </a>
         </li>
       </ul>
-      <div>
+      <div class="contacts-section">
         <a class="contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
       <a class="logo-html-academy-link" href="#">
